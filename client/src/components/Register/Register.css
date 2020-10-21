@@ -1,0 +1,151 @@
+.register {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 10px 125px;
+    background-color: rgb(27, 27, 27);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 200%;
+    text-align: center;
+}
+
+.register h1 {
+    margin: 0 0 30px;
+
+    color:  white;
+    font-size: 50px;
+}
+
+.register input {
+    display: block;
+    width: 400px;
+    min-width: calc(280px - 40px);
+    max-width: calc(100% - 40px);
+    height: 40px;
+    padding: 0 20px;
+    margin: 0 auto 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+    color: rgb(85, 108, 165);
+    font-size: 23px;
+}
+
+
+.password-strength 
+{
+    height: 50px;
+    margin-top: 15px;
+
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.register button {
+    width: 350px;
+    min-width: 280px;
+    max-width: calc(100%);
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 72, 0);
+    transition: width 0.25s;
+
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.register button:hover {
+    width: 440px;
+}
+
+.register .already-registered {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.register .error-message {
+    animation: fadeIn ease 1s;    
+    margin-top: 20px;
+    font-size: 25px;
+    color: orange;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/* Tablet Size */
+@media only screen and (max-width: 768px) { 
+    .register h1 {
+        font-size: 7vw;
+    }
+
+    .password-strength {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .register .already-registered {
+        font-size: 17px;
+    }
+
+    .register .error-message {
+        font-size: 20px;
+    }
+}
+
+/* Large Phone Size */
+@media only screen and (max-width: 425px) { 
+    .register {
+        min-width: 280px;
+        top: 0;
+    }
+
+    .register h1 {
+        font-size: 32px;
+        margin: 5vh 0 5vh;
+    }
+
+    .register input {
+        width: calc(100% - 20px);
+        min-width: calc(280px - 20px);
+        border-radius: 0;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .register button {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0 0;
+    }
+}

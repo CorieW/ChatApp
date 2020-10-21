@@ -1,0 +1,42 @@
+.users-list {
+    flex: 1;
+    background-color: rgb(27, 27, 27);
+    min-width: 300px;
+    max-width: 300px;
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+
+.user-tab {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.users-list .status-icon {
+    position: absolute;
+    bottom: 50%;
+    left: 20px;
+}
+
+.user-tab .username {
+    width: 80%;
+    margin: 0 5% 0 15%;
+    overflow: hidden;
+}
+
+.user-tab:hover {
+    text-decoration: underline;
+}
+
+/* Tablet Size */
+@media only screen and (max-width: 768px) { 
+    .users-list {
+        display: none;
+    }
+}

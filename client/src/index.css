@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(34, 34, 34);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.status-icon {
+  font-size: 12px;
+}
+
+form {
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  padding: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+textarea {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}

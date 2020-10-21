@@ -1,0 +1,18 @@
+I followed practices that are optimal for security sakes.
+
+TODO- Passwords stored with bcrypt/scrypt/PBKDF2 . This is better than MD5 and SHA, as they aren't great for password storing. Long salts are used to enforce good security practices.
+TODO- HTTPS is used to provide a secure connection between the user and the server. This in result will prevent middleman attacks from occuring.
+TODO- Login attempts limited to prevent brute-force attacks.
+*- Information is not leaked through error messages. No error message reveals whether an email is registered or not.
+TODO- 3rd party 0Auth authentication is used, as it's a proven and tested method of authentication.
+*- Sign up stage promotes creating a strong password
+*- Must enter password twice before signing up, as this will significantly reduce the chance of users signing up with a wrong password.
+TODO- Password reset is offered on 3rd login failure.
+TODO- Forgotten password flow - The forgotten password flow should rely on sending a one-time (or expiring) link to the user and asking for a new password when it's opened.
+TODO- Session expiry.
+TODO- Cookies are marked as secure to reduce cookie theft.
+TODO- Remember me for persistent logins.
+DONE- Email format is checked for a valid format.
+*- Password managers can capture the login credentials.
+TODO- SSO signups are avaliable, users can simply login with their gmail account.
+TODO- Show password button to reveal password whilst typing

@@ -1,0 +1,6 @@
+- Need to work on CSS, it's really cheap and quickly done.
+- Should handle bad inputs
+- Consistency across entire app with style ordering, attribute ordering, prop ordering, etc...
+- When clicking back arrow, returns white screen
+- Custom scroll bar
+- Can't see bottom right of message input with the send button being there.
