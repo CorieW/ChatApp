@@ -2,3 +2,8 @@ FireSoup
 FireySoup
 FireBlade
 FireStop
+GlowingEdge
+GlowDot
+FireRod
+GlowRod
+GlowFish

@@ -93,11 +93,12 @@ export default function Register(props) {
             <input type='password' placeholder='Re-enter password' onChange={handleRePasswordChange} />
             <button>Create Account</button>
             <p className='already-registered'><a href='#'>Already have an account?</a></p>
-            {console.log(errorMessages)}
-            {errorMessages.map(error =>
-            {
-                return (<p className='error-message'>{error}</p>)
-            })}
+            <ul className={'error-box ' + (errorMessages.length > 0 ? '' : 'no-display')}>
+                {errorMessages.map(error =>
+                {
+                    return (<li className='error-message'>{error}</li>)
+                })}
+            </ul>
         </form>
     )
 }

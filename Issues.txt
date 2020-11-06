@@ -1,0 +1,2 @@
+React App:
+- Login auto entry sometimes bogs out of the wazoo

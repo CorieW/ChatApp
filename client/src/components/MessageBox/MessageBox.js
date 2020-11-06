@@ -16,7 +16,9 @@ export default function MessageBox(props)
     function handleMessageSubmit(e)
     {
         e.preventDefault()
+
         setMessage('')
+
         props.setMessageHistory([...props.messageHistory, {to: props.recipient, from: {name: 'you'}, message: message}])
         props.sendMessageToUser(props.recipient, message)
     }
@@ -44,7 +46,7 @@ export default function MessageBox(props)
                 })}
             </div>
             <form onSubmit={handleMessageSubmit}>
-                <textarea className='message-input' name='messageInput' placeholder='Message' onChange={handleMessageChange}></textarea>
+                <textarea className='message-input' name='messageInput' placeholder='Message' onChange={handleMessageChange} value={message}/>
                 <button className='send-message' type='submit'>SEND</button>
             </form>
         </div>

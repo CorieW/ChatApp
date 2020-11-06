@@ -16,6 +16,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
+.no-display {
+  display: none;
+}
+
 form {
   height: 0;
   padding: 0;

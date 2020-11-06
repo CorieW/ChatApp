@@ -2,7 +2,7 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
-    padding: 100px 10px 125px;
+    padding: 100px 10px 150px;
     background-color: rgb(27, 27, 27);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -49,7 +49,6 @@
     min-width: 280px;
     max-width: calc(100%);
     height: 40px;
-    margin-bottom: 20px;
     border: none;
     border-radius: 25px;
     background-color: rgb(255, 72, 0);
@@ -65,17 +64,25 @@
 }
 
 .register .already-registered {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
     color: white;
     text-decoration: underline;
 }
 
+.error-box {
+    width: 40%;
+    padding: 20px 50px;
+    border: 3px solid red;
+    margin: 20px auto;
+}
+
 .register .error-message {
+    list-style-type: disc;
+    text-align: left;
     animation: fadeIn ease 1s;    
-    margin-top: 20px;
-    font-size: 25px;
-    color: orange;
+    font-size: 22px;
+    color: white;
 }
 
 @keyframes fadeIn {
